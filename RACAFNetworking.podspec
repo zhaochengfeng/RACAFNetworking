@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "RACAFNetworking"
-s.version      = "1.1"
+s.version      = "1.3"
 s.summary      = "AFNetworking ReactiveObjC extension"
 s.homepage     = "https://github.com/zhaochengfeng/RACAFNetworking"
 s.license      = { :type => 'MIT', :file => 'LICENSE' }
