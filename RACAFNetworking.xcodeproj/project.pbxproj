@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05D6D9F9B01C7DFB82B26685 /* libPods-RACAFNetworkingUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0B0FF9034B96D90775CB01 /* libPods-RACAFNetworkingUITests.a */; };
+		210B70CBEB4BA878D3EBEF61 /* libPods-RACAFNetworkingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9469DE033EBFE38ADC962BB4 /* libPods-RACAFNetworkingTests.a */; };
+		E3ED1807C6C6A8FA8AE812E8 /* libPods-RACAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE0C41880247A16174FF086 /* libPods-RACAFNetworking.a */; };
+		E9AB658120B82D6B00C12DF7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AB658020B82D6B00C12DF7 /* AppDelegate.m */; };
+		E9AB658420B82D6B00C12DF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AB658320B82D6B00C12DF7 /* ViewController.m */; };
+		E9AB658720B82D6B00C12DF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9AB658520B82D6B00C12DF7 /* Main.storyboard */; };
+		E9AB658920B82D6C00C12DF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9AB658820B82D6C00C12DF7 /* Assets.xcassets */; };
+		E9AB658C20B82D6C00C12DF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9AB658A20B82D6C00C12DF7 /* LaunchScreen.storyboard */; };
+		E9AB658F20B82D6C00C12DF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AB658E20B82D6C00C12DF7 /* main.m */; };
+		E9AB659920B82D6C00C12DF7 /* RACAFNetworkingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AB659820B82D6C00C12DF7 /* RACAFNetworkingTests.m */; };
+		E9AB65A420B82D6C00C12DF7 /* RACAFNetworkingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AB65A320B82D6C00C12DF7 /* RACAFNetworkingUITests.m */; };
+		E9AB65B720B82D8A00C12DF7 /* RACSubscriber+AFProgressCallbacks.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AB65B420B82D8A00C12DF7 /* RACSubscriber+AFProgressCallbacks.m */; };
+		E9AB65B820B82D8A00C12DF7 /* AFHTTPSessionManager+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = E9AB65B620B82D8A00C12DF7 /* AFHTTPSessionManager+RACSupport.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9AB659520B82D6C00C12DF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9AB657420B82D6B00C12DF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9AB657B20B82D6B00C12DF7;
+			remoteInfo = RACAFNetworking;
+		};
+		E9AB65A020B82D6C00C12DF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9AB657420B82D6B00C12DF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9AB657B20B82D6B00C12DF7;
+			remoteInfo = RACAFNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06D2946F209C6B1C808C03AD /* Pods-RACAFNetworkingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACAFNetworkingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACAFNetworkingUITests/Pods-RACAFNetworkingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1DE0C41880247A16174FF086 /* libPods-RACAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RACAFNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B6DA67F8341215B4D91E18E /* Pods-RACAFNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACAFNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACAFNetworking/Pods-RACAFNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		6BAB328CE9AC5CF5259B82D4 /* Pods-RACAFNetworkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACAFNetworkingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACAFNetworkingTests/Pods-RACAFNetworkingTests.release.xcconfig"; sourceTree = "<group>"; };
+		84507AF3DA6715B1FAF8A8CC /* Pods-RACAFNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACAFNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACAFNetworking/Pods-RACAFNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		9469DE033EBFE38ADC962BB4 /* libPods-RACAFNetworkingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RACAFNetworkingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF22A5FE5D187EB7435F8034 /* Pods-RACAFNetworkingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACAFNetworkingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACAFNetworkingUITests/Pods-RACAFNetworkingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E9AB657C20B82D6B00C12DF7 /* RACAFNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACAFNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9AB657F20B82D6B00C12DF7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E9AB658020B82D6B00C12DF7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E9AB658220B82D6B00C12DF7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E9AB658320B82D6B00C12DF7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E9AB658620B82D6B00C12DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9AB658820B82D6C00C12DF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9AB658B20B82D6C00C12DF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9AB658D20B82D6C00C12DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9AB658E20B82D6C00C12DF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9AB659420B82D6C00C12DF7 /* RACAFNetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACAFNetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9AB659820B82D6C00C12DF7 /* RACAFNetworkingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACAFNetworkingTests.m; sourceTree = "<group>"; };
+		E9AB659A20B82D6C00C12DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9AB659F20B82D6C00C12DF7 /* RACAFNetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACAFNetworkingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9AB65A320B82D6C00C12DF7 /* RACAFNetworkingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACAFNetworkingUITests.m; sourceTree = "<group>"; };
+		E9AB65A520B82D6C00C12DF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9AB65B220B82D8A00C12DF7 /* RACAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACAFNetworking.h; sourceTree = "<group>"; };
+		E9AB65B320B82D8A00C12DF7 /* AFHTTPSessionManager+RACSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+RACSupport.h"; sourceTree = "<group>"; };
+		E9AB65B420B82D8A00C12DF7 /* RACSubscriber+AFProgressCallbacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACSubscriber+AFProgressCallbacks.m"; sourceTree = "<group>"; };
+		E9AB65B520B82D8A00C12DF7 /* RACSubscriber+AFProgressCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACSubscriber+AFProgressCallbacks.h"; sourceTree = "<group>"; };
+		E9AB65B620B82D8A00C12DF7 /* AFHTTPSessionManager+RACSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+RACSupport.m"; sourceTree = "<group>"; };
+		EB0B0FF9034B96D90775CB01 /* libPods-RACAFNetworkingUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RACAFNetworkingUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFAF1C165A3BF080C997C8D4 /* Pods-RACAFNetworkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACAFNetworkingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACAFNetworkingTests/Pods-RACAFNetworkingTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9AB657920B82D6B00C12DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3ED1807C6C6A8FA8AE812E8 /* libPods-RACAFNetworking.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9AB659120B82D6C00C12DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210B70CBEB4BA878D3EBEF61 /* libPods-RACAFNetworkingTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9AB659C20B82D6C00C12DF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05D6D9F9B01C7DFB82B26685 /* libPods-RACAFNetworkingUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F6ED3FB23874F62BBBF85E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DE0C41880247A16174FF086 /* libPods-RACAFNetworking.a */,
+				9469DE033EBFE38ADC962BB4 /* libPods-RACAFNetworkingTests.a */,
+				EB0B0FF9034B96D90775CB01 /* libPods-RACAFNetworkingUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DB9171D3938B26233BA1599 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B6DA67F8341215B4D91E18E /* Pods-RACAFNetworking.debug.xcconfig */,
+				84507AF3DA6715B1FAF8A8CC /* Pods-RACAFNetworking.release.xcconfig */,
+				EFAF1C165A3BF080C997C8D4 /* Pods-RACAFNetworkingTests.debug.xcconfig */,
+				6BAB328CE9AC5CF5259B82D4 /* Pods-RACAFNetworkingTests.release.xcconfig */,
+				06D2946F209C6B1C808C03AD /* Pods-RACAFNetworkingUITests.debug.xcconfig */,
+				BF22A5FE5D187EB7435F8034 /* Pods-RACAFNetworkingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E9AB657320B82D6B00C12DF7 = {
+			isa = PBXGroup;
+			children = (
+				E9AB657E20B82D6B00C12DF7 /* RACAFNetworking */,
+				E9AB659720B82D6C00C12DF7 /* RACAFNetworkingTests */,
+				E9AB65A220B82D6C00C12DF7 /* RACAFNetworkingUITests */,
+				E9AB657D20B82D6B00C12DF7 /* Products */,
+				5DB9171D3938B26233BA1599 /* Pods */,
+				1F6ED3FB23874F62BBBF85E1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E9AB657D20B82D6B00C12DF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9AB657C20B82D6B00C12DF7 /* RACAFNetworking.app */,
+				E9AB659420B82D6C00C12DF7 /* RACAFNetworkingTests.xctest */,
+				E9AB659F20B82D6C00C12DF7 /* RACAFNetworkingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9AB657E20B82D6B00C12DF7 /* RACAFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				E9AB65B120B82D7400C12DF7 /* RACAFNetworking */,
+				E9AB657F20B82D6B00C12DF7 /* AppDelegate.h */,
+				E9AB658020B82D6B00C12DF7 /* AppDelegate.m */,
+				E9AB658220B82D6B00C12DF7 /* ViewController.h */,
+				E9AB658320B82D6B00C12DF7 /* ViewController.m */,
+				E9AB658520B82D6B00C12DF7 /* Main.storyboard */,
+				E9AB658820B82D6C00C12DF7 /* Assets.xcassets */,
+				E9AB658A20B82D6C00C12DF7 /* LaunchScreen.storyboard */,
+				E9AB658D20B82D6C00C12DF7 /* Info.plist */,
+				E9AB658E20B82D6C00C12DF7 /* main.m */,
+			);
+			path = RACAFNetworking;
+			sourceTree = "<group>";
+		};
+		E9AB659720B82D6C00C12DF7 /* RACAFNetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9AB659820B82D6C00C12DF7 /* RACAFNetworkingTests.m */,
+				E9AB659A20B82D6C00C12DF7 /* Info.plist */,
+			);
+			path = RACAFNetworkingTests;
+			sourceTree = "<group>";
+		};
+		E9AB65A220B82D6C00C12DF7 /* RACAFNetworkingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9AB65A320B82D6C00C12DF7 /* RACAFNetworkingUITests.m */,
+				E9AB65A520B82D6C00C12DF7 /* Info.plist */,
+			);
+			path = RACAFNetworkingUITests;
+			sourceTree = "<group>";
+		};
+		E9AB65B120B82D7400C12DF7 /* RACAFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				E9AB65B220B82D8A00C12DF7 /* RACAFNetworking.h */,
+				E9AB65B320B82D8A00C12DF7 /* AFHTTPSessionManager+RACSupport.h */,
+				E9AB65B620B82D8A00C12DF7 /* AFHTTPSessionManager+RACSupport.m */,
+				E9AB65B520B82D8A00C12DF7 /* RACSubscriber+AFProgressCallbacks.h */,
+				E9AB65B420B82D8A00C12DF7 /* RACSubscriber+AFProgressCallbacks.m */,
+			);
+			path = RACAFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9AB657B20B82D6B00C12DF7 /* RACAFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9AB65A820B82D6C00C12DF7 /* Build configuration list for PBXNativeTarget "RACAFNetworking" */;
+			buildPhases = (
+				EF7FF05C1C5F3E7CD77025C4 /* [CP] Check Pods Manifest.lock */,
+				E9AB657820B82D6B00C12DF7 /* Sources */,
+				E9AB657920B82D6B00C12DF7 /* Frameworks */,
+				E9AB657A20B82D6B00C12DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RACAFNetworking;
+			productName = RACAFNetworking;
+			productReference = E9AB657C20B82D6B00C12DF7 /* RACAFNetworking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9AB659320B82D6C00C12DF7 /* RACAFNetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9AB65AB20B82D6C00C12DF7 /* Build configuration list for PBXNativeTarget "RACAFNetworkingTests" */;
+			buildPhases = (
+				F4274A8E80F4601AA42A328A /* [CP] Check Pods Manifest.lock */,
+				E9AB659020B82D6C00C12DF7 /* Sources */,
+				E9AB659120B82D6C00C12DF7 /* Frameworks */,
+				E9AB659220B82D6C00C12DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9AB659620B82D6C00C12DF7 /* PBXTargetDependency */,
+			);
+			name = RACAFNetworkingTests;
+			productName = RACAFNetworkingTests;
+			productReference = E9AB659420B82D6C00C12DF7 /* RACAFNetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E9AB659E20B82D6C00C12DF7 /* RACAFNetworkingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9AB65AE20B82D6C00C12DF7 /* Build configuration list for PBXNativeTarget "RACAFNetworkingUITests" */;
+			buildPhases = (
+				82F597F47DDC5404A8A67673 /* [CP] Check Pods Manifest.lock */,
+				E9AB659B20B82D6C00C12DF7 /* Sources */,
+				E9AB659C20B82D6C00C12DF7 /* Frameworks */,
+				E9AB659D20B82D6C00C12DF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9AB65A120B82D6C00C12DF7 /* PBXTargetDependency */,
+			);
+			name = RACAFNetworkingUITests;
+			productName = RACAFNetworkingUITests;
+			productReference = E9AB659F20B82D6C00C12DF7 /* RACAFNetworkingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9AB657420B82D6B00C12DF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = chengfeng;
+				TargetAttributes = {
+					E9AB657B20B82D6B00C12DF7 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					E9AB659320B82D6C00C12DF7 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = E9AB657B20B82D6B00C12DF7;
+					};
+					E9AB659E20B82D6C00C12DF7 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = E9AB657B20B82D6B00C12DF7;
+					};
+				};
+			};
+			buildConfigurationList = E9AB657720B82D6B00C12DF7 /* Build configuration list for PBXProject "RACAFNetworking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9AB657320B82D6B00C12DF7;
+			productRefGroup = E9AB657D20B82D6B00C12DF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9AB657B20B82D6B00C12DF7 /* RACAFNetworking */,
+				E9AB659320B82D6C00C12DF7 /* RACAFNetworkingTests */,
+				E9AB659E20B82D6C00C12DF7 /* RACAFNetworkingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9AB657A20B82D6B00C12DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9AB658C20B82D6C00C12DF7 /* LaunchScreen.storyboard in Resources */,
+				E9AB658920B82D6C00C12DF7 /* Assets.xcassets in Resources */,
+				E9AB658720B82D6B00C12DF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9AB659220B82D6C00C12DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9AB659D20B82D6C00C12DF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82F597F47DDC5404A8A67673 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RACAFNetworkingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF7FF05C1C5F3E7CD77025C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RACAFNetworking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4274A8E80F4601AA42A328A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RACAFNetworkingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9AB657820B82D6B00C12DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9AB658420B82D6B00C12DF7 /* ViewController.m in Sources */,
+				E9AB658F20B82D6C00C12DF7 /* main.m in Sources */,
+				E9AB658120B82D6B00C12DF7 /* AppDelegate.m in Sources */,
+				E9AB65B820B82D8A00C12DF7 /* AFHTTPSessionManager+RACSupport.m in Sources */,
+				E9AB65B720B82D8A00C12DF7 /* RACSubscriber+AFProgressCallbacks.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9AB659020B82D6C00C12DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9AB659920B82D6C00C12DF7 /* RACAFNetworkingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9AB659B20B82D6C00C12DF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9AB65A420B82D6C00C12DF7 /* RACAFNetworkingUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9AB659620B82D6C00C12DF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9AB657B20B82D6B00C12DF7 /* RACAFNetworking */;
+			targetProxy = E9AB659520B82D6C00C12DF7 /* PBXContainerItemProxy */;
+		};
+		E9AB65A120B82D6C00C12DF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9AB657B20B82D6B00C12DF7 /* RACAFNetworking */;
+			targetProxy = E9AB65A020B82D6C00C12DF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9AB658520B82D6B00C12DF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9AB658620B82D6B00C12DF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9AB658A20B82D6C00C12DF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9AB658B20B82D6C00C12DF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9AB65A620B82D6C00C12DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E9AB65A720B82D6C00C12DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9AB65A920B82D6C00C12DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B6DA67F8341215B4D91E18E /* Pods-RACAFNetworking.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RACAFNetworking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RACAFNetworking.RACAFNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9AB65AA20B82D6C00C12DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84507AF3DA6715B1FAF8A8CC /* Pods-RACAFNetworking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RACAFNetworking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RACAFNetworking.RACAFNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E9AB65AC20B82D6C00C12DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFAF1C165A3BF080C997C8D4 /* Pods-RACAFNetworkingTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RACAFNetworkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RACAFNetworking.RACAFNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RACAFNetworking.app/RACAFNetworking";
+			};
+			name = Debug;
+		};
+		E9AB65AD20B82D6C00C12DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BAB328CE9AC5CF5259B82D4 /* Pods-RACAFNetworkingTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RACAFNetworkingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RACAFNetworking.RACAFNetworkingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RACAFNetworking.app/RACAFNetworking";
+			};
+			name = Release;
+		};
+		E9AB65AF20B82D6C00C12DF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D2946F209C6B1C808C03AD /* Pods-RACAFNetworkingUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RACAFNetworkingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RACAFNetworking.RACAFNetworkingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RACAFNetworking;
+			};
+			name = Debug;
+		};
+		E9AB65B020B82D6C00C12DF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF22A5FE5D187EB7435F8034 /* Pods-RACAFNetworkingUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RACAFNetworkingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RACAFNetworking.RACAFNetworkingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RACAFNetworking;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9AB657720B82D6B00C12DF7 /* Build configuration list for PBXProject "RACAFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9AB65A620B82D6C00C12DF7 /* Debug */,
+				E9AB65A720B82D6C00C12DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9AB65A820B82D6C00C12DF7 /* Build configuration list for PBXNativeTarget "RACAFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9AB65A920B82D6C00C12DF7 /* Debug */,
+				E9AB65AA20B82D6C00C12DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9AB65AB20B82D6C00C12DF7 /* Build configuration list for PBXNativeTarget "RACAFNetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9AB65AC20B82D6C00C12DF7 /* Debug */,
+				E9AB65AD20B82D6C00C12DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9AB65AE20B82D6C00C12DF7 /* Build configuration list for PBXNativeTarget "RACAFNetworkingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9AB65AF20B82D6C00C12DF7 /* Debug */,
+				E9AB65B020B82D6C00C12DF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9AB657420B82D6B00C12DF7 /* Project object */;
+}
