@@ -10,8 +10,8 @@ s.ios.deployment_target = '8.0'
 s.requires_arc = true
 
 
-s.dependency 'ReactiveObjC', '~>3.0.0'
-s.dependency "AFNetworking",  '~>3.0.0'
+s.dependency 'ReactiveObjC', '>3.0.0'
+s.dependency "AFNetworking",  '>3.0.0'
 s.source_files  = "RACAFNetworking/RACAFNetworking/*"
 
 end
