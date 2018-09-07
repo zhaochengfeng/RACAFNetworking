@@ -34,7 +34,14 @@ NSString *const RACAFNResponseObjectErrorKey = @"responseObject";
     return [[RACSignal createSignal:^(id<RACSubscriber> subscriber) {
         NSMutableURLRequest *request = [self.requestSerializer multipartFormRequestWithMethod:@"POST" URLString:[[NSURL URLWithString:path relativeToURL:self.baseURL] absoluteString] parameters:parameters constructingBodyWithBlock:block error:nil];
         
-        NSURLSessionDataTask *task = [self dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+        NSURLSessionDataTask *task = [self dataTaskWithRequest:request uploadProgress:^(NSProgress * _Nonnull downloadProgress) {
+            CGFloat progressValue = downloadProgress.completedUnitCount / (float)downloadProgress.totalUnitCount;
+            if([subscriber isKindOfClass:[RACPassthroughSubscriber class]]){
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [(RACPassthroughSubscriber *)subscriber sendProgress:progressValue];
+                });
+            }
+        } downloadProgress:nil completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
             if (error) {
                 NSMutableDictionary *userInfo = [error.userInfo mutableCopy];
                 if (responseObject) {
@@ -75,7 +82,14 @@ NSString *const RACAFNResponseObjectErrorKey = @"responseObject";
     return [RACSignal createSignal:^(id<RACSubscriber> subscriber) {
         NSURLRequest *request = [self.requestSerializer requestWithMethod:method URLString:[[NSURL URLWithString:path relativeToURL:self.baseURL] absoluteString] parameters:parameters error:nil];
         
-        NSURLSessionDataTask *task = [self dataTaskWithRequest:request uploadProgress:nil downloadProgress:nil completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+        NSURLSessionDataTask *task = [self dataTaskWithRequest:request uploadProgress:^(NSProgress * _Nonnull uploadProgress) {
+            
+        } downloadProgress:^(NSProgress * _Nonnull downloadProgress) {
+            CGFloat progressValue = downloadProgress.completedUnitCount / (float)downloadProgress.totalUnitCount;
+            if([subscriber isKindOfClass:[RACPassthroughSubscriber class]]){
+                [(RACPassthroughSubscriber *)subscriber sendProgress:progressValue];
+            }
+        } completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
             if (error) {
                 NSMutableDictionary *userInfo = [error.userInfo mutableCopy];
                 if (responseObject) {
@@ -92,6 +106,33 @@ NSString *const RACAFNResponseObjectErrorKey = @"responseObject";
         
         return [RACDisposable disposableWithBlock:^{
             [task cancel];
+        }];
+    }];
+}
+
+- (RACSignal *)rac_DOWNLOAD:(NSString *)path saveURL:(NSURL *)saveURL {
+    return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:path relativeToURL:self.baseURL]];
+        NSURLSessionDownloadTask *downloadTask = [self downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
+            CGFloat progressValue = downloadProgress.completedUnitCount / (float)downloadProgress.totalUnitCount;
+            if([subscriber isKindOfClass:[RACPassthroughSubscriber class]]){
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [(RACPassthroughSubscriber *)subscriber sendProgress:progressValue];
+                });
+            }
+        } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+            return saveURL;
+        } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+            if (error) {
+                [subscriber sendError:error];
+            } else {
+                [subscriber sendNext:filePath];
+                [subscriber sendCompleted];
+            }
+        }];
+        [downloadTask resume];
+        return [RACDisposable disposableWithBlock:^{
+            [downloadTask cancel];
         }];
     }];
 }

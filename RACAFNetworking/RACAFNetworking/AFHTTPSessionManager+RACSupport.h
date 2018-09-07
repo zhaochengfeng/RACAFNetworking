@@ -7,6 +7,7 @@
 //
 
 #import <AFNetworking/AFHTTPSessionManager.h>
+#import "RACSubscriber+AFProgressCallbacks.h"
 #import <ReactiveObjC/ReactiveObjC.h>
 
 #if (defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000) || (defined(__MAC_OS_X_VERSION_MAX_ALLOWED) && __MAC_OS_X_VERSION_MAX_ALLOWED >= 1090)
@@ -30,6 +31,8 @@ extern NSString *const RACAFNResponseObjectErrorKey;
 /// A convenience around -POST:parameters:constructingBodyWithBlock:success:failure: that returns a
 /// cold signal of the resulting JSON object and response headers or error.
 - (RACSignal *)rac_POST:(NSString *)path parameters:(id)parameters constructingBodyWithBlock:(void (^)(id <AFMultipartFormData> formData))block;
+
+- (RACSignal *)rac_DOWNLOAD:(NSString *)path saveURL:(NSURL *)saveURL;
 
 /// A convenience around -PUT:parameters:success:failure: that returns a cold signal of the
 /// resulting JSON object and response headers or error.

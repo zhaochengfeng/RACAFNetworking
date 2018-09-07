@@ -5,19 +5,29 @@
 //  Created by 赵成峰 on 2018/5/25.
 //  Copyright © 2018年 chengfeng. All rights reserved.
 //
-#ifdef RAFN_EXPERIMENTAL_PROGRESS_SUPPORT
 
 #import <ReactiveObjC/ReactiveObjC.h>
+#import <ReactiveObjC/RACPassthroughSubscriber.h>
 
-@interface RACSubscriber (AFProgressCallbacks)
-
-+ (instancetype)subscriberWithNext:(void (^)(id x))next progress:(void (^)(float progress))progress error:(void (^)(NSError *error))error completed:(void (^)(void))completed;
+@interface RACPassthroughSubscriber (KLProgress)
 
 - (void)sendProgress:(float)p;
 
 @end
 
-@interface RACSignal (RAFNProgressSubscriptions)
+@interface KLRACSubscriber: NSObject<RACSubscriber>
+
++ (instancetype)subscriberWithNext:(void (^)(id x))next progress:(void (^)(float progress))progress error:(void (^)(NSError *error))error completed:(void (^)(void))completed;
+
+- (void)sendProgress:(float)p;
+- (void)sendNext:(id)value;
+- (void)sendError:(NSError *)error;
+- (void)sendCompleted;
+- (void)didSubscribeWithDisposable:(RACCompoundDisposable *)disposable;
+
+@end
+
+@interface RACSignal (KLProgressSubscriptions)
 
 
 // Convenience method to subscribe to the `progress` and `next` events.
@@ -40,10 +50,3 @@
 
 @end
 
-@interface RACSubject (RAFNProgressSending)
-
-- (void)sendProgress:(float)value;
-
-@end
-
-#endif
